@@ -63,9 +63,18 @@ public class Employee {
         System.out.println("Your salary is:" + " " + salary);
 
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "baseSalary=" + baseSalary +
+                ", serialNum=" + serialNum +
+                ", salary=" + salary +
+                ", overtime=" + overtime +
+                ", positions=" + positions +
+                ", departments=" + departments +
+                '}';
+    }
 
     public double getBaseSalary() {
         return baseSalary;
