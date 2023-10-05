@@ -23,6 +23,8 @@ public class Employee {
     this.positions = Position.WORKER;
     }
 
+
+
     public void Employee(int serialNum, double baseSalary)
     {
         this.serialNum = serialNum;
@@ -37,7 +39,7 @@ public class Employee {
 
     public void employeePosition(Position positions)
     {
-        for (Position position : positions.values()){
+        for (Position position : Position.values()){
             if(position == Position.WORKER){
                 System.out.println("You have been promoted to the position of a: " + " " +  Position.EMPLOYEE);
                 this.salary = 1.200;
